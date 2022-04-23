@@ -138,27 +138,28 @@ body {
 }
 
 /* About Page */
-#about-navbar{
+.navbar-page{
     height: 40vh;
     background:linear-gradient(rgba(19, 17, 17, 0.603), rgba(3, 3, 3, 0.603)), url(../images/Animal_Rescueback.png);
     background-position: center;
     background-size: cover;
     padding: 0 2rem;
+    position: sticky;
 }
 
-#about-navbar>.container{
+.navbar-page>.container{
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-#about-navbar>.container>div{
+.navbar-page>.container>div{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#about-navbar>.container>div>a{
+.navbar-page>.container>div>a{
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -166,17 +167,17 @@ body {
     font-size: 1.1rem;
 }
 
-#about-navbar>.container>div>a:hover{
+.navbar-page>.container>div>a:hover{
     color: var(--default-color);
 }
 
-#about-navbar>.container>div:last-child{
+.navbar-page>.container>div:last-child{
     height: 100%;
     display: flex;
     align-items: center;justify-content: center;
 }
 
-#about-navbar>.container>div:last-child>h1{
+.navbar-page>.container>div:last-child>h1{
     font-size: 2.5rem;
     color: #fff;
 }
@@ -216,6 +217,43 @@ body {
     color: var(--default-color);
 }
 
+/* Gallery Page */
+#gallery-body{
+    padding: 2rem 2rem;
+}
+
+#gallery-body>.container>h2{
+    color: var(--default-color);
+    margin-bottom: 3rem;
+}
+
+#gallery-body>.container{
+    text-align: center;
+}
+#gallery-body>.container>.pets-gallery>div>img{
+    width: 275px;
+    height: 183px;
+}
+#gallery-body>.container>.pets-gallery>div{
+    text-align: left;
+    width: 275px;
+    box-shadow: 1px 1px 5px gray;
+    box-sizing: border-box;
+}
+
+#gallery-body>.container>.pets-gallery>div>div{
+    padding: 1rem 1rem;
+}
+#gallery-body>.container>.pets-gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(275px , 1fr));
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+
 @media(max-width:800px) {
     /* Homepage */
     #home-header>.container>h1 , #about-navbar>.container>div:first-child>h1{
@@ -246,5 +284,10 @@ body {
     }
     #about-body>.container>ul{
         font-weight: normal;
+    }
+
+    /* Gallery page */
+    #gallery-body>.container>h2{
+       font-size: 1.2rem;
     }
 }
