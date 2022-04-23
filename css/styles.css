@@ -38,7 +38,7 @@ body {
 
 }
 
-#home-navbar>.container>h1 {
+#home-navbar>.container>h1 , #about-navbar>.container>div:first-child>h1{
     color: var(--default-color);
     font-size: 2rem;
 }
@@ -52,7 +52,7 @@ body {
     margin-left: 1.2rem;
 }
 
-#home-navbar>.container>ul>li>a {
+#home-navbar>.container>ul>li>a{
     text-decoration: none;
     color: black;
     font-weight: 600;
@@ -137,8 +137,53 @@ body {
     margin-top: 1rem;
 }
 
+/* About Page */
+#about-navbar{
+    height: 40vh;
+    background:linear-gradient(rgba(19, 17, 17, 0.603), rgba(3, 3, 3, 0.603)), url(../images/Animal_Rescueback.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 2rem;
+}
+
+#about-navbar>.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#about-navbar>.container>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#about-navbar>.container>div>a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+
+#about-navbar>.container>div>a:hover{
+    color: var(--default-color);
+}
+
+#about-navbar>.container>div:last-child{
+    height: 100%;
+    display: flex;
+    align-items: center;justify-content: center;
+}
+
+#about-navbar>.container>div:last-child>h1{
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+
 @media(max-width:800px) {
-    #home-header>.container>h1 {
+    #home-header>.container>h1 , #about-navbar>.container>div:first-child>h1{
         font-size: 2.2rem;
     }
 
