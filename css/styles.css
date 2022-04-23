@@ -139,7 +139,7 @@ body {
 
 /* About Page */
 .navbar-page{
-    height: 40vh;
+    height: 30vh;
     background:linear-gradient(rgba(19, 17, 17, 0.603), rgba(3, 3, 3, 0.603)), url(../images/Animal_Rescueback.png);
     background-position: center;
     background-size: cover;
@@ -251,6 +251,33 @@ body {
     align-items: center;
     justify-items: center;
     gap: 20px;
+}
+
+/* Contact Page */
+#contact-body>.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    align-items: center;
+    text-align: center;
+}
+
+#contact-body>.container p{
+    font-size: 1.5rem;
+    color: var(--default-color);
+    font-weight: bold;
+}
+
+
+#contact-body>.container h1{
+    font-size: 2rem;
+}
+
+#contact-body>.container img{
+    height: 20px;
+    margin: 20px;
+    cursor: pointer;
 }
 
 
